@@ -44,3 +44,12 @@ recent release at u211 or above.
 We always welcome new contributors to the project! See [How to Contribute](https://cwiki.apache.org/confluence/display/ZOOKEEPER/HowToContribute) for details on how to submit patch through pull request and our contribution workflow.
 
 
+### 源码编译注意事项
+
+1. zookeeper-server中的pom依赖 jetty的scope注释即可，不行就刷新后，清楚重新构建，一般不会有问题
+2. 启动配置看图：
+
+![启动配置图](./zookeeperstart.png)
+
+3. zk-api 是自己建的模块，主要学习一下zk的api,一个注册中心和分布式锁小实验，代码并不完善
+4. 关于集群启动jetty端口占用问题请看zoo.cfg文件中的配置
